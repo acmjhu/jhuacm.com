@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
 }
 
 a {
@@ -13,4 +19,43 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.body > h1 {
+  @apply mt-2 mb-4 text-3xl font-bold;
+}
+
+.body > h2 {
+  @apply mt-2 mb-4 text-2xl font-bold;
+}
+
+.body > li {
+  @apply children:font-normal;
+}
+
+.body > ul {
+  @apply mb-4 list-disc list-inside;
+}
+
+.body > ol {
+  @apply mb-4 list-decimal list-inside;
+}
+
+.body > blockquote {
+  @apply px-6 pb-4 italic text-gray-700 children:mb-0;
+}
+
+.body > a {
+  @apply font-semibold underline hover:decoration-2 decoration-1 decoration-sky-500;
+}
+
+.body > p {
+  @apply mb-4;
+}
+
+.body code {
+  @apply font-mono text-orange-400;
+}
+
+.login-bg {
 }

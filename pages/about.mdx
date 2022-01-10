@@ -1,0 +1,80 @@
+import Head from 'next/head';
+import { Layout } from '../components';
+import Post from '../components/mdx';
+import { AvatarFamily as AF } from '../components/mdx/avatarGroup';
+
+# About us
+
+We are a student organization of the [Johns Hopkins University](https://www.jhu.edu/) dedicated to furthering the knowledge and advancement of computers and information technology through the free exchange of ideas and information.
+
+As a chapter of the oldest computing society in the world, the JHU ACM is a place for diverse backgrounds and interests, and serves the JHU community as a whole.
+
+During the semester, the ACM has weekly meetings in Malone announced via email and posted on our [Facebook](https://www.facebook.com/JHUACM/) page and the [Events](/events) section of this website.
+
+[Join us!](/join)
+
+## Executive Board
+
+<div className='text-center'>
+  <h3>In alphabetical order</h3>
+</div>
+
+<AF.AvatarGroup>
+  <AF.Avatar
+    src='/img/Ariel.jpeg'
+    alt='ariel'
+    name='Ariel Bao'
+    role='President'
+  />
+  <AF.Avatar
+    src='/img/Emily.jpeg'
+    alt='emily'
+    name='Emily Zhai'
+    role='Vice President'
+  />
+  <AF.Avatar
+    src='/img/Julia.jpg'
+    alt='julia'
+    name='Julia Bian'
+    role='Event Assistant'
+  />
+  <AF.Avatar
+    src='/img/Miseok.jpg'
+    alt='miseok'
+    name='Miseok Kim'
+    role='Secretary'
+  />
+  <AF.Avatar
+    src='/img/Nishikar.png'
+    alt='nishikar'
+    name='Nishikar Paruchuri'
+    role='Event Assistant'
+  />
+  <AF.Avatar
+    src='/img/Robert.jpeg'
+    alt='robert'
+    name='Robert Zhang'
+    role='System Admin'
+  />
+  <AF.Avatar
+    src='/img/Saidaman.jpg'
+    alt='saidaman'
+    name='Saidaman Earla'
+    role='Event Chair'
+  />
+</AF.AvatarGroup>
+
+## Other links
+
+- [Old website](https://web.archive.org/web/20171004043432/https://acm.jhu.edu/)
+
+export default ({ children }) => (
+  <>
+    <Head>
+      <title>About</title>
+    </Head>
+    <Layout landing={false}>
+      <Post>{children}</Post>
+    </Layout>
+  </>
+);

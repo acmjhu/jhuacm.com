@@ -1,0 +1,49 @@
+import Head from 'next/head';
+import { Layout } from '../components';
+import Post from '../components/mdx';
+
+# Join us
+
+Anyone can become a member at no cost. Even non-CS majors. Even non-engineering types. OK, you still have to be a student or alum (or faculty member?) at Hopkins. Preferably, you should be interested in computers and information technology as well.
+
+To join, you have to do three things:
+
+1. Attend one of our weekly meetings.
+2. Attend one of our weekly meetings.
+3. Attend one of our weekly meetings.
+
+That's three (3) meetings and you're in (you may substitute some other official event for a meeting). There are no membership dues, though we do take donations. Of course, it would be nice if you kept on attending meetings. Or stopped by the office once in a while.
+
+## Email
+
+Before you join, you might want to:
+
+Join our Announce email list to stay informed of meetings and other happenings.
+
+## Benefits
+
+There are lots!
+
+You can participate in exciting projects to bring new and interesting services to the JHU community, and voice your concerns about issues like information access, security, and privacy.
+
+You'll receive an account on our computer systems that grants you access to a huge, ever-increasing range of services. You'll be able to:
+
+- Use the workstations and printers in our office in Malone Hall.
+- Have 50 GiB of storage space on our systems that you can access from anywhere in the world.
+- Host a website using that storage space.
+- Run virtual machines on our cluster.
+- Get email at acm.jhu.edu / jhuacm.org.
+- Access our computing resources for any project, locally or over the internet via SSH.
+- Use our gitlab instance to host projects.
+- Members also get J-Card access to the office, so you can come in at any time, 24/7. The office is a great place to just relax or even (gasp!) work. And we have soda, coffee, snacks, and a microwave.
+
+export default ({ children }) => (
+  <>
+    <Head>
+      <title>About</title>
+    </Head>
+    <Layout landing={false}>
+      <Post>{children}</Post>
+    </Layout>
+  </>
+);
