@@ -21,6 +21,13 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel='icon' href='/favicon.ico' />
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <title>JHU ACM</title>
+        <meta
+          name='description'
+          content='This is the Johns Hopkins University Chapter of the Association for Computing Machinery.'
+        />
       </Head>
       <Component {...pageProps} />
     </>
