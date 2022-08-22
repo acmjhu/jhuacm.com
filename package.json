@@ -1,0 +1,39 @@
+{
+  "name": "jhu-acm",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@bytemd/plugin-gfm": "^1.10.13",
+    "@bytemd/react": "^1.10.13",
+    "@heroicons/react": "^1.0.5",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^12.0.7",
+    "date-fns": "^2.28.0",
+    "express-jwt": "^6.1.0",
+    "formik": "^2.2.9",
+    "gray-matter": "^4.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mdast-util-from-markdown": "^1.2.0",
+    "mongodb": "^4.2.2",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "^14.0.1",
+    "remark-html": "^15.0.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.1.2",
+    "autoprefixer": "^10.4.0",
+    "clsx": "^1.1.1",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.6",
+    "tailwindcss-children": "^2.1.0"
+  }
+}
