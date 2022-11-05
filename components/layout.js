@@ -150,7 +150,7 @@ export const Layout = ({ children, landing }) => {
         </div>
       </MenuPopup>
       <div
-        className={clsx('mx-auto min-w-[300px] w-full h-full', {
+        className={clsx('mx-auto min-w-[150px] w-full h-full', {
           'fixed overflow-hidden pointer-events-none': showMenu,
         })}
       >

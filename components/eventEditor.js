@@ -8,6 +8,7 @@ import { Layout } from '.';
 import { H1 } from './mdx/heading';
 import { eventService } from '../services';
 import { Input } from '.';
+import 'github-markdown-css/github-markdown-light.css';
 
 const plugins = [gfm()];
 
